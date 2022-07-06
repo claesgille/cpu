@@ -1,0 +1,18 @@
+Fetch
+
+Fetch 0 : PCOut MR IRIn       ; Program Counter to Address bus Memory to Data bus increment PC
+Fetch 1 : PCInc
+
+Move R1, #0xFFFF : opcode 0; Move immediate
+
+Step 0 : PCOut MR RaIn
+Step 1 : PCInc
+
+Move R1, #OxFFFF : opcode 1 ; Move from Memory
+
+Step 0 : PCOut ARIn
+Step 1 : AROut MR RaIn PCInc
+
+Move R2, R1 : opcode 2 : Move between registers
+
+Step 0 : RbOut RaIn PCInc
