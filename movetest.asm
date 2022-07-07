@@ -29,8 +29,5 @@
 }
 
 movetest:
-    noop
     move r7, #0xFEFE
-    move r6, 0x0000
-    move r0, r7
-    move r1, r6
+    noop
